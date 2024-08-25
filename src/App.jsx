@@ -16,18 +16,20 @@ function App() {
     todoVal.current.value = "";
   }
 
-  // To Delete Todo
-  const DeletTodo = (index) =>{
-      todo.splice(index , 1);
-      setTodo([...todo])
-  }
-  
   // To Edit Todo
   const EditTodo = (index) =>{
     const editVal = prompt("Enter Updated Value");
     todo.splice(index , 1 ,editVal)
     setTodo([...todo])
   }
+
+  // To Delete Todo
+  const DeletTodo = (index) =>{
+      todo.splice(index , 1);
+      setTodo([...todo])
+  }
+  
+
 
 
   return (
