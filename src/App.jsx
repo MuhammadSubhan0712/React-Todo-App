@@ -30,20 +30,20 @@ function App() {
   }
   
 
-
-
   return (
     <>
-    <div className='d-flex flex-column justify-content-center items-center'>
+    <div className='d-flex flex-column justify-content-center place-items-center'>
       <div className='mt-3 align-center'>
-    <h1 className=''>Todo</h1>
+    <h1 className='bg-dark text-white'>Todo</h1>
     </div>
-    <form onSubmit={addTodo}>
-  <div class="mb-3">
-    <label class="form-label">Enter Todo</label>
-    <input type="text" class="form-control width-25px" placeholder='Todo' ref={todoVal}/>
 
-    <button type="submit" class="btn btn-primary">Add todo</button>
+    {/* Todo Form */}
+    <form onSubmit={addTodo}>
+  <div className="mb-3">
+    <label className="form-label">Enter Todo</label>
+    <input type="text" className="form-control width-25px" placeholder='Todo' ref={todoVal}/>
+
+    <button type="submit" className="btn btn-primary">Add todo</button>
  
   </div>
   </form>
@@ -55,8 +55,8 @@ function App() {
         {item}
       </li>
   
-  <button onClick={()=> EditTodo} type="submit" class="btn btn-success">Edit</button>
-  <button onClick={() => DeletTodo} type="submit" class="btn btn-danger">Delete</button>
+  <button onClick={()=> EditTodo(index)} type="submit" className="btn btn-success">Edit</button>
+  <button onClick={() => DeletTodo(index)} type="submit" className="btn btn-danger">Delete</button>
   </div>
 })}
   </ul>
