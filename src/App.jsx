@@ -7,6 +7,7 @@ function App() {
   const [todo, setTodo] = useState([]);
   const todoVal = useRef();
 
+  // To add  todo 
   const addTodo = (event) =>{
     event.preventDefault();
     todo.push(todoVal.current.value);
