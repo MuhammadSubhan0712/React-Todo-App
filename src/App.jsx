@@ -16,6 +16,7 @@ function App() {
     todoVal.current.value = "";
   }
 
+  // To Delete Todo
   const DeletTodo = (index) =>{
       todo.splice(index , 1);
       setTodo([...todo])
