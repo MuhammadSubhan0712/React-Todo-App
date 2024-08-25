@@ -86,9 +86,9 @@ button:hover {
 
 
 /* Button to edit todo */
-.btn-success {
+.btn-danger {
   padding: 10px 15px;
-  background-color: #004706;
+  background-color: #bb0000;
   color: white;
   font-size: 16px;
   border: none;
@@ -96,10 +96,11 @@ button:hover {
   cursor: pointer;
   transition: background-color 0.3s ease-in-out;
 }
-
 .btn-success:hover {
-  background-color: #7dff7d;
+  background-color: #ff9090;
 }
+
+
  /* list style  */
 
 .styled-list {
