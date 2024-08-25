@@ -9,16 +9,16 @@ function App() {
 
   // To add  todo 
   const addTodo = (event) =>{
-    if (todo == "") {
-      alert("Please Enter todo");
+    if (todo !==  " ") {
+      event.preventDefault();
+      todo.push(todoVal.current.value);
+      setTodo([...todo])
+      console.log(todo);
+      todoVal.current.value = "";
     }
-    
+
     else{
-    event.preventDefault();
-    todo.push(todoVal.current.value);
-    setTodo([...todo])
-    console.log(todo);
-    todoVal.current.value = "";
+      alert("Please Enter todo");
     }
   }
 
@@ -38,14 +38,12 @@ function App() {
 
   return (
     <>
-    <div className='d-flex flex-column justify-content-center place-items-center'>
-      <div className='mt-3 align-center'>
-    <h1 className='bg-dark text-white'>Todo</h1>
-    </div>
+    <div className='container'>
+    <h2>Todo</h2>
 
     {/* Todo form  */}
-    <form onSubmit={addTodo}>
-  <div className="mb-3">
+    <form className='styled-form' onSubmit={addTodo}>
+  <div className="form-group">
     <label className="form-label">Enter Todo</label>
     <input type="text" className="form-control width-25px" placeholder='Todo' ref={todoVal}/>
 
@@ -56,7 +54,7 @@ function App() {
 
     {/* Todo List  */}
 
-  <ul>
+  <ul className='styled-list'>
    { todo.map((item , index) =>{
       return <div key={index}>
       <li>
