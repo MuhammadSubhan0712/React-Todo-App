@@ -52,7 +52,7 @@
 }
 
 /* button add todo */
-button {
+.btn-add {
   padding: 12px 20px;
   background-color: #000a9b;
   color: white;
@@ -63,13 +63,14 @@ button {
   transition: background-color 0.3s ease-in-out;
 }
 
-button:hover {
-  background-color: #005e64;
+.btn-add:hover {
+  background-color: #009ba7;
 }
 
 
 /* Button to edit todo */
 .btn-success {
+  margin-left: 12px;
   padding: 10px 15px;
   background-color: #004706;
   color: white;
@@ -87,6 +88,7 @@ button:hover {
 
 /* Button to edit todo */
 .btn-danger {
+  margin-left: 200px;
   padding: 10px 15px;
   background-color: #bb0000;
   color: white;
@@ -96,7 +98,7 @@ button:hover {
   cursor: pointer;
   transition: background-color 0.3s ease-in-out;
 }
-.btn-success:hover {
+.btn-danger:hover {
   background-color: #ff9090;
 }
 
