@@ -68,6 +68,7 @@ button:hover {
 }
 
 
+/* Button to edit todo */
 .btn-success {
   padding: 10px 15px;
   background-color: #004706;
@@ -83,6 +84,8 @@ button:hover {
   background-color: #7dff7d;
 }
 
+
+/* Button to edit todo */
 .btn-success {
   padding: 10px 15px;
   background-color: #004706;
