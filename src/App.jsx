@@ -1,6 +1,8 @@
 import { useState , useRef } from 'react'
 import './App.css'
 
+
+// Create Component
 function App() {
   const [todo, setTodo] = useState([]);
   const todoVal = useRef();
