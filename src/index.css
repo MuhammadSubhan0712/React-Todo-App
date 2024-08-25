@@ -36,33 +36,3 @@ h2{
   line-height: 1.1;
 }
 
-button {
-  padding: 12px 20px;
-  background-color: #5cb85c;
-  color: white;
-  font-size: 16px;
-  border: none;
-  border-radius: 5px;
-  cursor: pointer;
-  transition: background-color 0.3s ease;
-}
-
-button:hover {
-  background-color: #4cae4c;
-}
-
-button:focus,
-button:focus-visible {
-  outline: 4px auto -webkit-focus-ring-color;
-}
-
-@media (prefers-color-scheme: light) {
-  :root {
-    color: #213547;
-    background-color: #ffffff;
-  }
- 
-  button {
-    background-color: #f9f9f9;
-  }
-} 

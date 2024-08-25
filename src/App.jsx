@@ -44,12 +44,14 @@ function App() {
     {/* Todo form  */}
     <form className='styled-form' onSubmit={addTodo}>
   <div className="form-group">
+
     <label className="form-label">Enter Todo</label>
     <input type="text" className="form-control width-25px" placeholder='Todo' ref={todoVal}/>
 
-    <button type="submit" className="btn btn-primary">Add todo</button>
- 
-  </div>
+    </div>
+
+    <button type='submit'> Add Todo </button>
+
   </form>
 
     {/* Todo List  */}
@@ -60,8 +62,8 @@ function App() {
       <li>
         {item}
       </li>
-  <button onClick={()=> EditTodo(index)} type="submit" className="btn btn-success">Edit</button>
-  <button onClick={() => DeletTodo(index)} type="submit" className="btn btn-danger">Delete</button>
+  <button onClick={()=> EditTodo(index)} type="submit" className="btn-success">Edit</button>
+  <button onClick={() => DeletTodo(index)} type="submit" className="btn-danger">Delete</button>
   </div>
 })}
   </ul>
