@@ -57,7 +57,6 @@ function App() {
       <li>
         {item}
       </li>
-  
   <button onClick={()=> EditTodo(index)} type="submit" className="btn btn-success">Edit</button>
   <button onClick={() => DeletTodo(index)} type="submit" className="btn btn-danger">Delete</button>
   </div>
