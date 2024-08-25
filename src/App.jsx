@@ -9,11 +9,17 @@ function App() {
 
   // To add  todo 
   const addTodo = (event) =>{
+    if (todo == "") {
+      alert("Please Enter todo");
+    }
+    
+    else{
     event.preventDefault();
     todo.push(todoVal.current.value);
     setTodo([...todo])
     console.log(todo);
     todoVal.current.value = "";
+    }
   }
 
   // To Edit Todo
@@ -36,7 +42,6 @@ function App() {
       <div className='mt-3 align-center'>
     <h1 className='bg-dark text-white'>Todo</h1>
     </div>
-
 
     {/* Todo form  */}
     <form onSubmit={addTodo}>
