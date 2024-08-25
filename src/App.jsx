@@ -37,7 +37,8 @@ function App() {
     <h1 className='bg-dark text-white'>Todo</h1>
     </div>
 
-    {/* Todo Form */}
+
+    {/* Todo form  */}
     <form onSubmit={addTodo}>
   <div className="mb-3">
     <label className="form-label">Enter Todo</label>
@@ -47,6 +48,8 @@ function App() {
  
   </div>
   </form>
+
+    {/* Todo List  */}
 
   <ul>
    { todo.map((item , index) =>{
