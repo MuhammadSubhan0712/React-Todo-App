@@ -10,16 +10,14 @@ function App() {
   const addTodo = (event) => {
     event.preventDefault();
 
-    if (todoVal.current.value === " ") {
+    if (todoVal.current.value === "") {
       alert("Please Enter todo");
-    }
-   
-     else {
+    } 
+    else {
       todo.push(todoVal.current.value);
       setTodo([...todo]);
       console.log(todo);
       todoVal.current.value = "";
-    
     }
   };
 
@@ -52,7 +50,10 @@ function App() {
             />
           </div>
 
-          <button className="btn-add" type="submit"> Add Todo </button>
+          <button className="btn-add" type="submit">
+            {" "}
+            Add Todo{" "}
+          </button>
         </form>
 
         {/* Todo List  */}
