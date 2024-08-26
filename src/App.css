@@ -110,8 +110,7 @@
   margin-top: 20px;
   padding: 0;
 }
-
-.styled-list li {
+styled-list li {
   padding: 15px;
   margin-bottom: 10px;
   background-color: #fff;
